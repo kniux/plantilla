@@ -1,43 +1,15 @@
-Plantilla para proyectos Open Hardware
-=======================================================
-
-Este repositorio tiene el objetivo de servir de plantilla
-para facilitar la documentación de proyectos Open-Hardware.
-
-Las carpetas propuestas en esta estructura están basados
-en las recomendaciones de buenas prácticas de la OSHWA
-traducidas al español que se encuentran disponibles en
-http://www.openhardware.sv/acerca-de/buenas-practicas-para-el-hardware-de-fuente-abierta/
-
-Puedes modificar este documento como mejor se ajuste a tus
-necesidades sobreescribiendo los textos en cada párrafo y
-agregando la información y archivos que consideres conveniente.
-
-Inicia borrando esta sección incluyendo esta línea.
-
-
 Nombre de tu proyecto
 =====================
+Este proyecto muestra un reloj calendario en tiempo real utilizando 
+la tarjeta Arduino UNO y el integrado DS3231. Los parametros son visualizados
+a partir de dos botones en una pantalla LCD
 
-Escribe aquí una descripción breve de dos o tres párrafos
-en donde expliques: ¿Qué es tu proyecto? ¿Para qué sirve? y ¿Cómo
-hacerlo funcionar?
+Nivel de desarrollo del proyecto:
+"Beta"
 
-Procura no utilizar técnicismos o lenguaje complicado, recuerda
-que las personas que leerán esta descripción puede que no tengan
-tu mismo nivel de conocimiento o tu misma área de experiencia.
+Créditos:
+https://simple-circuit.com/arduino-ds1307-lcd-set-button/
 
-Explica brévemente el funcionamiento esperado de tu proyecto, no es
-necesario que escribas todo en detalle, si el funcionamiento requiere
-una explicación más detallada puedes hacer referencia a un sitio web
-o a otro archivo de texto dentro de la carpeta "docs".
-
-Es muy útil que indiques el nivel de desarrollo de este proyecto sea
-"estable", "beta", "incompleto" o "a-penas-funciona".
-
-También puedes agregar en esta sección los créditos correspondientes
-si tu proyecto se deriva de otro, nombres o pseudónimos de las
-personas que colaboraron, licencia y fecha de última actualización.
 
 Últimas adiciones
 =================
