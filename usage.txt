@@ -1,6 +1,18 @@
 Utilización
 ===========
 
-Coloca en este archivo los detalles para la utilización de tu proyecto. Por ejemplo:
+Arduino real time clock with DS3231 code:
+The DS3231 Arduino code is similar to the DS1307 code and it works with both RTC chips.
+The Arduino code below doesn’t use any library for the DS3231 RTC, the Wire library is for the communication between the Arduino and the DS3231 using I2C protocol.
 
-> ¡¡Conéctalo a la alimentación y mira la luz parpadear!!
+The DS3231 works with BCD format only and to convert the BCD to decimal and vise versa I used the 2 lines below (example for minute):
+// Convert BCD to decimal
+minute = (minute >> 4) * 10 + (minute & 0x0F);
+
+// Convert decimal to BCD
+minute = ((minute / 10) << 4) + (minute % 10);
+
+void DS3231_display() : displays time and calendar, before displaying time and calendar data are converted from BCD to decimal format.
+
+void blink_parameter() : this small function works as a delay except that it is interrupted by the buttons B1 (connected to pin 8) and B2 (connected to pin 9). When called and without pressing any button the total time is 10 x 25ms = 250ms. With this function we can see the blinking of the selected parameter with a frequency of 2Hz. So a delay of 250ms comes after the print of the selected parameter and after that delay a 2 spaces is printed which makes the parameter disappears from the LCD and another 250ms delay comes after the print of the 2 spaces.
+
