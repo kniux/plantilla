@@ -1,4 +1,4 @@
-Nombre de tu proyecto
+RELOJ EN TIEMPO REAL
 =====================
 Este proyecto muestra un reloj calendario en tiempo real utilizando 
 la tarjeta Arduino UNO y el integrado DS3231. Los parametros son visualizados
@@ -13,16 +13,18 @@ https://simple-circuit.com/arduino-ds1307-lcd-set-button/
 
 Últimas adiciones
 =================
+El sensor DS3231 es un integrado de bajo costo y fácil configuración/uso, alta presción en tiempo
+real del reloj. La cuenta la realiza en segundos, minutos, horas, día de la semana,
+día, mes y año.
+Una batería puede ser conectada para que el DS3231 retenga la cuenta en caso de un fallo o 
+apagado en la alimentación de un sistema. Igualmente el DS3231 no necesita oscilador ya que la placa
+cuenta con uno empotrado.
 
-The DS3231 is also a low cost, easy to use and highly accurate real time clock IC 
-which counts seconds, minutes, houres, day of the week, date, month and year. 
-A battery can be connected to the DS3231 to keep the time running in case of main power failure.
-The DS3231 don’t need any oscillator because it has a built-in one.
+Cambios en la última versión 0.1alpha:
 
-cambios en la última versión 0.1alpha:
-
-* Agregados textos de ejemplo
+* Agregado ejemplo original
 * Agregado números de versión
+* Agregado comentarios adaptados y variables en contexto 
 
 Correcciones:
 
