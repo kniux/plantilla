@@ -5,7 +5,7 @@ la tarjeta Arduino UNO y el integrado DS3231. Los parametros son visualizados
 a partir de dos botones en una pantalla LCD
 
 Nivel de desarrollo del proyecto:
-"Beta"
+"alpha"
 
 Créditos:
 https://simple-circuit.com/arduino-ds1307-lcd-set-button/
@@ -14,12 +14,12 @@ https://simple-circuit.com/arduino-ds1307-lcd-set-button/
 Últimas adiciones
 =================
 
-Coloca en esta sección los últimos cambios relevantes o correcciones
-que hayas realizado a tu proyecto. Es importante que notifiques sobre
-cambios que modifiquen el comportamiento de tu proyecto o las salidas
-que este genera.
+The DS3231 is also a low cost, easy to use and highly accurate real time clock IC 
+which counts seconds, minutes, houres, day of the week, date, month and year. 
+A battery can be connected to the DS3231 to keep the time running in case of main power failure.
+The DS3231 don’t need any oscillator because it has a built-in one.
 
-Ejemplo de cambios en la última versión 0.1alpha:
+cambios en la última versión 0.1alpha:
 
 * Agregados textos de ejemplo
 * Agregado números de versión
@@ -28,32 +28,21 @@ Correcciones:
 
 * Corregidos errores de ortografía
 
-No es necesario que coloques todo el historial de cambios, en vez de eso
-puedes crear un archivo en esta carpeta llamado "changelog.txt" con el histórico
-completo (preferiblemente en orden cronológico inverso):
-
-> Puede revisar el historial de cambios completo en el archivo changelog.txt
-
-Costo/Lista de Materiales
+Lista de Materiales
 =========================
 
-Si la lista de materiales de este proyecto es corta puedes incluírla aquí, en
-caso contrario puedes crear un archivo llamado "bom.csv" o un archivo de hoja de
-cálculo donde puedes detallar la lista de materiales y costos. Procura utilizar
-formatos abiertos en la medida de lo posible, por ejemplo eligiendo ODS sobre
-Excel.
+Arduino board
+DS3231 RTC board
+1602 LCD screen
+2 x push button
+10K ohm variable resistor (or potentiometer)
+330 ohm resistor
+3V coin cell battery
+Breadboard
+Jumper wires
 
 Pre-requisitos/Requerimientos
 =============================
-
-Dedica esta sección a explicar en detalle ¿Qué se requiere para hacer funcionar
-tu proyecto?. Debes colocar los requerimientos o pre-requisitos del software
-para hacerlo funcionar y herramientas para construirlo.
-
-Para el hardware puedes especificar herramientas o maquinaria específica que se
-necesite para construir el proyecto.
-
-Ejemplo:
 
 Requerimientos de software:
 
@@ -64,17 +53,12 @@ Herramientas requeridas:
 * Pinza cortadora de cable.
 
 
-Construcción y uso
+Uso
 ==================
 
-Si el procedimiento de construcción es sencillo, puedes detallarlo en esta
-sección, en caso contrario puedes crear un archivo "build.txt" donde detalles el
-procedimiento a seguir.
-
-De igual manera si el procedimiento de utilización del software asociado a tu
-proyecto es sencillo puedes explicarlo aquí. En caso de que las instrucciones
-sean muy extensas, puedes crear un archivo "usage.txt" y hacer referencia
-al mismo en esta sección.
+In the circuit there are 2 push buttons (B1 & B2) connected to pins 8 and 9 respectively,
+the two push buttons are used to set time date parameters (minutes, hours, date, month and year).
+Button B1 selects the parameter and B2 increments the selected parameter.
 
 Carpetas
 ========
@@ -111,10 +95,8 @@ puedan requerir para hacer funcionar o construir tu proyecto. Un ejemplo de ello
 puede ser un driver controlador de un dispositivo específico o vínculos a software
 relevante, fotografías o videos.
 
-Excepción de responsabilidades
+Excepción de responsabilidades (Disclaimer)
 ==============================
-
-Es recomendable que incluyas un texto como el siguiente en tus proyectos:
 
 > El presente proyecto se comparte "tal cual" con el único objetivo de que sea útil.
 El/los creadores del presente hardware y su software asociado no pueden garantizar su
@@ -128,10 +110,7 @@ o sistemas de los cuales dependan vidas de personas de manera directa o indirect
 Licenciamiento
 ==============
 
-Agrega aquí la licencia que utilizas en el código fuente de tu proyecto, adicionalmente
-agradeceríamos si colocas la nota de atribución de la plantilla al final.
-
-> La plantilla de este README.md ha sido desarrollada por la comunidad openhardware.sv
+> La plantilla de este README.md ha sido desarrollada por la visión openhardware.sv
 con el objetivo de facilitar la documentación de proyectos. Esta plantilla está protegida
 bajo la licencia CC BY, puedes modificarla y redistribuirla manteniendo esta nota de
 atribución del autor.
