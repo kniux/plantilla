@@ -1,5 +1,5 @@
-RELOJ EN TIEMPO REAL CON DS3231 
-(FROM SIMPLE PROJECTS BLOG)
+RELOJ EN TIEMPO REAL CON DS3231
+(FROM SIMPLE PROJECTS)
 =====================
 Este proyecto muestra un reloj calendario en tiempo real utilizando 
 la tarjeta Arduino UNO y el integrado DS3231. Los parametros son visualizados
